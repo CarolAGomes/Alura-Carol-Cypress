@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-05T23:16:42.775Z",
+    "end": "2023-02-05T23:16:49.481Z",
+    "duration": 6706,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "44477fea-7185-4d9e-880f-d0a4d169294b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\3-alurapic\\alurapic.cy.js",
+      "file": "cypress\\e2e\\3-alurapic\\alurapic.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c2c88ef9-8c3c-4eb2-ae9f-9ef153f49cdf",
+          "title": "Login e registro do usuário dentro do Alura Pic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar mensagem de e-mail invalido",
+              "fullTitle": "Login e registro do usuário dentro do Alura Pic Verificar mensagem de e-mail invalido",
+              "timedOut": null,
+              "duration": 2854,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.get('button').should('not.be.empty').and('be.visible').click();\ncy.get(\"input[formcontrolname='email']\").type('tiago');\ncy.contains('ap-vmessage', 'Invalid e-mail').should('be.visible');",
+              "err": {},
+              "uuid": "2ec5acb9-f2e7-4062-8ec7-9bd44cf3e5e0",
+              "parentUUID": "c2c88ef9-8c3c-4eb2-ae9f-9ef153f49cdf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ec5acb9-f2e7-4062-8ec7-9bd44cf3e5e0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2854,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
